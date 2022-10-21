@@ -1,13 +1,12 @@
 
 
-
 //GRÁFICO
 
 am5.ready(function() {
 
     // Create root element
     // https://www.amcharts.com/docs/v5/getting-started/#Root_element
-    var root = am5.Root.new("chartdiv");
+    var root = am5.Root.new("moeda");
     
     
     // Set themes
@@ -111,3 +110,7 @@ am5.ready(function() {
     chart.appear(1000, 100);
     
     }); // end am5.ready()
+
+___________________________________________________________________________________________
+
+
