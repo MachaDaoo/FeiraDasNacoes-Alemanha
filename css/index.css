@@ -1,10 +1,26 @@
 *{
     margin: 0%;
     padding: 0%;
+    
 }
 
 /*ID*/
 #bandeira{
     height: 70px;
     width: 100%;
+}
+#chartdiv {
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    width: 50%;
+}
+#divUm{
+    margin-bottom: 5%;
+}
+#montanha{
+    margin-bottom: 6%;
+}
+#graf-moeda{
+    margin-left: 5%;
 }
