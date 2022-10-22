@@ -5,6 +5,9 @@
 }
 
 /*ID*/
+#divUm{
+    margin-bottom: 5%;
+}
 #bandeira{
     height: 70px;
     width: 100%;
@@ -16,15 +19,19 @@
 }
 #moeda {
     width: 100%;
-    height: 500px;
+    height: 600px;
     background-color: white;
     width: 50%;
     
 }
-#graf-moeda{
+#graf-moeda,#idh{
     margin-left: 5%;
 }
-#divUm{
-    margin-bottom: 5%;
-}
 
+#chartdiv {
+    width: 100%;
+    height: 600px;
+    margin-bottom: 10%;
+    width: 50%;
+
+}
