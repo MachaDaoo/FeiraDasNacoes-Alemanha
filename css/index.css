@@ -1,12 +1,33 @@
+@keyframes animation{
+    from{transform: translate3d(0px, -100px, 0px);}
+    to{transform: translate3d(0px, 0px, 0px);}
+}
+
 *{
     margin: 0%;
     padding: 0%;
     
 }
+/*CLASS*/
+.bottom{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
 
 /*ID*/
 #divUm{
+    animation-name: animation;
+    animation-duration: 2s;
     margin-bottom: 5%;
+}
+#texto{
+    float: left;
 }
 #bandeira{
     height: 70px;
@@ -14,18 +35,18 @@
     
 }
 #montanha{
-    margin-bottom: 6%;
-    
+    margin-bottom: 2%;
 }
 #moeda {
-    width: 100%;
+    width: 50%;
     height: 600px;
     background-color: white;
-    width: 50%;
+    float: right;
     
 }
-#graf-moeda,#idh{
-    margin-left: 5%;
+#texto2{
+    width: 50%;
+    float: left;
 }
 
 #chartdiv {
@@ -34,4 +55,23 @@
     margin-bottom: 10%;
     width: 50%;
 
+}
+
+/*ANIMAÇÃO*/
+[data-anime],[data-mont]{
+    opacity: 0;
+    transition: .5s;
+}
+[data-anime="left"]{
+    transform: translate3d(-50px, 0px, 0px);
+}
+[data-anime="top"]{
+    transform: translate3d(0px, -50px, 0px);
+}
+[data-anime="bottom"]{
+    transform: translate3d(0px, 50px, 0px);
+}
+[data-anime].animacao{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
 }
