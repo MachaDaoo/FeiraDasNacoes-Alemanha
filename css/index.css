@@ -1,13 +1,21 @@
-@keyframes animation{
+/*ANIMAÇÃO CSS*/
+@keyframes montanha{
     from{transform: translate3d(0px, -100px, 0px);}
     to{transform: translate3d(0px, 0px, 0px);}
 }
+@keyframes frase{
+    from{transform: translate3d(-50px, 0px, 0px);}
+    to{transform: translate3d(0px, 0px, 0px);}
+}
 
+/*TAG*/
 *{
     margin: 0%;
     padding: 0%;
     
 }
+
+
 /*CLASS*/
 .bottom{
     background-color: black;
@@ -21,43 +29,65 @@
 }
 
 /*ID*/
-#divUm{
-    animation-name: animation;
-    animation-duration: 2s;
-    margin-bottom: 5%;
-}
-#texto{
-    float: left;
-}
+
 #bandeira{
     height: 70px;
     width: 100%;
     
 }
+
+
+#divUm{
+    width: 100%;
+}
 #montanha{
     margin-bottom: 2%;
+    animation-name: montanha;
+    animation-duration: 2s;
+    margin-bottom: 5%;
 }
+#texto1{
+    margin-top: 10%;
+    margin-left: 5%;
+    float: left;
+    animation-name: frase;
+    animation-duration: 2s;
+}
+
+
+#chartdiv {
+    height: 600px;
+    margin-bottom: 10%;
+    width: 51%;
+    float: left;
+}
+#texto2{
+    float: right;
+    width: 45%;
+    margin-right: 2%;
+    margin-left: 1%;
+    margin-top: 10%;
+}
+
+
 #moeda {
-    width: 50%;
+    width: 51%;
     height: 600px;
     background-color: white;
     float: right;
     
 }
-#texto2{
-    width: 50%;
+#texto3{
+    width: 45%;
     float: left;
+    margin-left: 3%;
+    margin-top: 10%;
 }
 
-#chartdiv {
-    width: 100%;
-    height: 600px;
-    margin-bottom: 10%;
-    width: 50%;
 
-}
 
-/*ANIMAÇÃO*/
+
+/*ANIMAÇÃO JS*/
 [data-anime],[data-mont]{
     opacity: 0;
     transition: .5s;
@@ -65,11 +95,14 @@
 [data-anime="left"]{
     transform: translate3d(-50px, 0px, 0px);
 }
-[data-anime="top"]{
-    transform: translate3d(0px, -50px, 0px);
-}
 [data-anime="bottom"]{
     transform: translate3d(0px, 50px, 0px);
+}
+[data-anime="frase2"]{
+    transform: translate3d(50px, 0px, 0px);
+}
+[data-anime="frase3"]{
+    transform: translate3d(-50px, 0px, 0px);
 }
 [data-anime].animacao{
     opacity: 1;
