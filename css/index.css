@@ -53,14 +53,12 @@
     animation-name: frase;
     animation-duration: 2s;
 }
-#indice{
-    width: 100%;
-}
+
 #chartdiv {
     height: 600px;
     margin-bottom: 2%;
     width: 51%;
-    /*float: left;*/
+    
 }
 #texto2{
     float: right;
@@ -108,3 +106,29 @@
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
 }
+
+/*ADAPTAÇÃO MOBILE*/
+@media (max-width: 600px) {
+    #montanha{
+        width: 100%;
+    }
+    #texto1{
+        width: 100%;
+    }
+    #chartdiv{
+        width: 100%;
+        float: left;
+    }
+    #texto2{
+        width: 100%;
+    }
+    #texto3{
+        width: 100%;
+    }
+    #moeda{
+        width: 100%;
+    }
+    #bottom{
+        font-size: 13px;
+    }
+  }
