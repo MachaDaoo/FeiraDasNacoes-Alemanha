@@ -53,14 +53,14 @@
     animation-name: frase;
     animation-duration: 2s;
 }
-#idh{
+#indice{
     width: 100%;
 }
 #chartdiv {
     height: 600px;
-    margin-bottom: 10%;
+    margin-bottom: 2%;
     width: 51%;
-    float: left;
+    /*float: left;*/
 }
 #texto2{
     float: right;
@@ -74,7 +74,6 @@
 #moeda {
     width: 51%;
     height: 600px;
-    background-color: white;
     float: right;
     
 }
