@@ -53,8 +53,9 @@
     animation-name: frase;
     animation-duration: 2s;
 }
-
-
+#idh{
+    width: 100%;
+}
 #chartdiv {
     height: 600px;
     margin-bottom: 10%;
