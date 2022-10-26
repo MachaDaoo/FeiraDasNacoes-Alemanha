@@ -31,22 +31,22 @@ am5.ready(function() {
     var colors = chart.get("colors");
     
     var data = [{
-      country: "USA-Dolar",
+      country: "USA $",
       visits: 10,
       icon: "https://www.amcharts.com/wp-content/uploads/flags/united-states.svg",
       columnSettings: { fill: colors.next() }
     }, {
-        country: "Alemanha-Euro",
+        country: "Alemanha €",
         visits: 10.23,
         icon: "https://www.amcharts.com/wp-content/uploads/flags/germany.svg",
         columnSettings: { fill: colors.next() }
       }, {
-      country: "China-Renminbi",
+      country: "China ¥",
       visits: 72.43,
       icon: "https://www.amcharts.com/wp-content/uploads/flags/china.svg",
       columnSettings: { fill: colors.next() }
     }, {
-      country: "Brasil-Real",
+      country: "Brasil R$",
       visits: 52.18,
       icon: "https://www.amcharts.com/wp-content/uploads/flags/brazil.svg",
       columnSettings: { fill: colors.next() }

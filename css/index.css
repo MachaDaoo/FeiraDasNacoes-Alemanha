@@ -12,9 +12,10 @@
 *{
     margin: 0%;
     padding: 0%;
-    
 }
-
+html,body{
+    width: 100%;
+}
 
 /*CLASS*/
 .bottom{
@@ -27,65 +28,107 @@
     display: flex;
     align-items: center;
 }
+.geopolitica{
+    width: 100%;
+    margin-bottom: 10%;
+}
+.indice{
+    width: 100%;
+}
+.economia{
+    width: 100%;
+}
 
 /*ID*/
 
 #bandeira{
+    width: 100%;
     height: 70px;
-    width: 100%;
-    
 }
-
-
-#divUm{
-    width: 100%;
-}
-#montanha{
-    margin-bottom: 2%;
+#img-montanha{
     animation-name: montanha;
     animation-duration: 2s;
-    margin-bottom: 5%;
 }
 #texto1{
-    margin-top: 10%;
-    margin-left: 5%;
-    float: left;
     animation-name: frase;
     animation-duration: 2s;
-}
 
-#chartdiv {
-    height: 600px;
-    margin-bottom: 2%;
-    width: 51%;
-    
+    width: 50%;
+    float: left;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-bottom: 5%;
 }
 #texto2{
-    float: right;
     width: 45%;
-    margin-right: 2%;
-    margin-left: 1%;
-    margin-top: 10%;
-}
-
-
-#moeda {
-    width: 51%;
-    height: 600px;
     float: right;
-    
+    margin-top: 10%;
+    margin-bottom: 20%;
+    margin-right: 5%;
+}
+#chartdiv{
+    width: 50%;
+    height: 550px;
+    margin-bottom: 10%;
 }
 #texto3{
-    width: 45%;
-    float: left;
-    margin-left: 3%;
+    width: 50%;
     margin-top: 10%;
+    float: left;
+    margin-left: 5%;
+}
+#moeda{
+    width: 45%;
+    height: 550px;
+    float: right;
+    margin-bottom: 2%;
 }
 
 
+/*ADAPTAÇÃO MOBILE*/
+@media (max-width: 600px) {
+    #texto1{
+    width: 100%;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-bottom: 0%;
+    }
+    #montanha{
+        margin-left: 30%;
+    }
+    #img-montanha{
+        width: 60%;
+    }
+    #texto2{
+        width: 100%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        margin-right: 0%;
+    }
+    #chartdiv{
+        width: 100%;
+        height: 400px;
+        margin-bottom: 55%;
+    }
+    #texto3{
+        width: 100%;
+        margin-top: 10%;
+        margin-left: 0%;
+    }
+    #moeda{
+        width: 100%;
+        margin-right: 0%;
+        height: 400px;
+        margin-bottom: 4%;
+    }
+    .bottom{
+        font-size: 13px;
+    }
+}
 
 
-/*ANIMAÇÃO JS*/
+/*
+/*ANIMAÇÃO JS
 [data-anime],[data-mont]{
     opacity: 0;
     transition: .5s;
@@ -106,35 +149,4 @@
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
 }
-
-/*ADAPTAÇÃO MOBILE*/
-@media (max-width: 600px) {
-    body{
-        width: 100%;
-    }
-    #montanha{
-        width: 100%;
-    }
-    #texto1{
-        width: 100%;
-        margin-left: 1%;
-        margin-right: 1%;
-        font-size: 13px;
-    }
-    #chartdiv{
-        width: 100%;
-        float: left;
-    }
-    #texto2{
-        width: 100%;
-    }
-    #texto3{
-        width: 100%;
-    }
-    #moeda{
-        width: 100%;
-    }
-    #bottom{
-        font-size: 13px;
-    }
-  }
+*/
