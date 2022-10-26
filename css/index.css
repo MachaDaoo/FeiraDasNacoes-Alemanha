@@ -94,12 +94,12 @@ html,body{
     margin-bottom: 0%;
     }
     #montanha{
-        margin-left: 30%;
+        margin-left: 0%;
         
     }
     #img-montanha{
-        width: 60%;
-        margin-bottom: 30%;
+        width: 300px;
+        height: 300px;
     }
     #texto2{
         width: 100%;
