@@ -1,4 +1,4 @@
-/*ANIMAÇÃO CSS
+/*ANIMAÇÃO CSS*/
 @keyframes montanha{
     from{transform: translate3d(0px, -100px, 0px);}
     to{transform: translate3d(0px, 0px, 0px);}
@@ -7,7 +7,7 @@
     from{transform: translate3d(-50px, 0px, 0px);}
     to{transform: translate3d(0px, 0px, 0px);}
 }
-*/
+
 
 /*TAG*/
 *{
@@ -88,6 +88,11 @@ html,body{
 
 /*ADAPTAÇÃO MOBILE*/
 @media (max-width: 600px) {
+    main{
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
     #texto1{
     width: 100%;
     margin-top: 0%;
@@ -95,7 +100,7 @@ html,body{
     margin-bottom: 0%;
     }
     #montanha{
-        margin-left: 15%;
+        margin-left: 10%;
         margin-bottom: 15%;
         
     }
@@ -142,12 +147,6 @@ html,body{
 }
 [data-anime="bottom"]{
     transform: translate3d(0px, 50px, 0px);
-}
-[data-anime="montanha"]{
-    transform: translate3d(0px, -50px, 0px);
-}
-[data-anime="frase1"]{
-    transform: translate3d(-5px, 0px, 0px);
 }
 [data-anime="frase2"]{
     transform: translate3d(50px, 0px, 0px);
