@@ -7,9 +7,9 @@ function animeSite(){
   const windonTop = window.pageYOffset + ((window.innerHeight *3)/4)
   target.forEach((elemento)=>{
     if((windonTop)>elemento.offsetTop){
-      elemento.classList.add('animacao')
+      elemento.classList.add(animacao)
     }else{
-      elemento.classList.remove('animacao')
+      elemento.classList.remove(animacao)
     }
 
     console.log(elemento.offsetTop)
