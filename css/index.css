@@ -95,9 +95,11 @@ html,body{
     }
     #montanha{
         margin-left: 30%;
+        
     }
     #img-montanha{
         width: 60%;
+        margin-bottom: 30%;
     }
     #texto2{
         width: 100%;
@@ -127,9 +129,9 @@ html,body{
 }
 
 
-/*
-/*ANIMAÇÃO JS
-[data-anime],[data-mont]{
+
+/*ANIMAÇÃO JS*/
+[data-anime]{
     opacity: 0;
     transition: .5s;
 }
@@ -149,4 +151,4 @@ html,body{
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
 }
-*/
+
